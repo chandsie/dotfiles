@@ -1,3 +1,6 @@
+" Pathogen Stuff
+call pathogen#infect()
+
 " General Info Settings
 set relativenumber
 set ruler
@@ -7,6 +10,17 @@ noremap ; :
 noremap : ;
 noremap <C-h> :help 
 imap ii <ESC>
+" Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <right> <nop>
+map <left> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <right> <nop>
+imap <left> <nop>
+" Disable mouse
+set mouse=
 
 " Searching
 set hlsearch
