@@ -67,12 +67,22 @@ set linebreak
 filetype plugin on
 set ofu=syntaxcomplete#Complete
 
-" Splits
-set splitright
-
 " Auto Commands
 au FocusLost * : wa
 
 " Custom Leader Commands
 let mapleader = ","
-nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<CR>
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+nnoremap <leader>w <C-w>v<C-w>l
+
+" Splits
+set splitright
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Plugin List
+"1. vim-numbertoggle
+"2. nerdcommenter
+
