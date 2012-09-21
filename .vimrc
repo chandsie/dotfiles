@@ -1,15 +1,26 @@
 " Pathogen Stuff
 call pathogen#infect()
 
-" General Info Settings
+" General Settings
+set nocompatible
+set modelines=0
+set encoding=utf-8
+set scrolloff=3
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest
+set ttyfast
+set backspace=indent,eol,start
+set undofile
 set relativenumber
 set ruler
 
 " Key Mappings
 noremap ; :
-noremap : ;
-noremap <C-h> :help 
-imap ii <ESC>
+noremap <C-h> :help
+imap jj <ESC>
 " Disable arrow keys
 map <up> <nop>
 map <down> <nop>
@@ -23,8 +34,16 @@ imap <left> <nop>
 set mouse=
 
 " Searching
+nnoremap / /\v
+vnoremap / /\v
 set hlsearch
 set incsearch
+set ignorecase
+set smartcase
+set gdefault
+set showmatch
+nnoremap <tab> %
+vnoremap <tab> %
 nnoremap <CR> :let @/ = ""<CR><CR>
 
 " Tab
@@ -50,3 +69,10 @@ set ofu=syntaxcomplete#Complete
 
 " Splits
 set splitright
+
+" Auto Commands
+au FocusLost * : wa
+
+" Custom Leader Commands
+let mapleader = ","
+nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<CR>
