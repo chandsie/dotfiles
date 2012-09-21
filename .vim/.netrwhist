@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/shreyas/.vim'
+let g:netrw_dirhist_2='/home/shreyas/.vim/bundle'
+let g:netrw_dirhist_3='/home/shreyas/.vim'
+let g:netrw_dirhist_4='/home/shreyas/.vim/autoload'
+let g:netrw_dirhist_5='/home/shreyas/.vim'
+let g:netrw_dirhist_6='/home/shreyas/.vim/indent'
+let g:netrw_dirhist_7='/home/shreyas/.vim'
+let g:netrw_dirhist_8='/home/shreyas/.vim/syntax'
+let g:netrw_dirhist_9='/home/shreyas/.vim'
