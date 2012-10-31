@@ -31,7 +31,7 @@ imap <down> <nop>
 imap <right> <nop>
 imap <left> <nop>
 " Disable mouse
-set mouse=
+"set mouse=
 
 " Searching
 nnoremap / /\v
@@ -57,10 +57,12 @@ set expandtab
 " Color/Highlights
 syntax on
 filetype plugin indent on
-colorscheme koehler
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " Wrapping (not that kind...)
-set wrap
+set nowrap
 set linebreak
 
 " Autocompletion
@@ -72,7 +74,9 @@ au FocusLost * : wa
 
 " Custom Leader Commands
 let mapleader = ","
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
+nnoremap <leader>t :retab<cr>
+nnoremap <leader>T mtgg=G`t:delmarks t<cr>:let @/=''<cr>
 nnoremap <leader>w <C-w>v<C-w>l
 
 " Splits
@@ -83,6 +87,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " Plugin List
+"0. pathogen
 "1. vim-numbertoggle
 "2. nerdcommenter
+"3. surround.vim
+"4. MatchTag (non-pathogen)
 

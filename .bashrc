@@ -98,9 +98,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 #. /usr/local/bin/django_bash_completion
-echo
-fortune -s | cowsay
-echo 
+#echo
+#fortune -s | cowsay
+#echo 
 
 if [ -f ~/.bash_profile ]; then
     . ~/.bash_profile
