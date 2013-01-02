@@ -7,6 +7,7 @@
 *.o
 *.so
 *.pyc
+.sass-cache/
 
 # Packages #
 ############
@@ -47,4 +48,9 @@ Thumbs.db
 *.un~
 Session.vim
 .netrwhist
+
+# Eclipse project files #
+#########################
+*.project
+*.pydevproject
 

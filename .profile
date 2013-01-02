@@ -105,3 +105,14 @@ fi
 if [ -f ~/.bash_profile ]; then
     . ~/.bash_profile
 fi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# For brew install of python
+export PATH="/usr/local/share/python:$PATH"
+
+declare -x VIRTUALENV_DISTRIBUTE=1
+
+# For brew install of ruby
+export PATH="/usr/local/Cellar/ruby/1.9.3-p362:$PATH"
