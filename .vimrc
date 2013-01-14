@@ -75,8 +75,7 @@ au FocusLost * : wa
 " Custom Leader Commands
 let mapleader = ","
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
-nnoremap <leader>t :retab<cr>
-nnoremap <leader>T mtgg=G`t:delmarks t<cr>:let @/=''<cr>
+nnoremap <leader>T :retab<cr>
 nnoremap <leader>w <C-w>v<C-w>l
 
 " Splits
@@ -92,4 +91,5 @@ nnoremap <C-l> <C-w>l
 "2. nerdcommenter
 "3. surround.vim
 "4. MatchTag (non-pathogen)
+"5. Command-T
 

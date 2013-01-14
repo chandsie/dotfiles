@@ -114,5 +114,3 @@ export PATH="/usr/local/share/python:$PATH"
 
 declare -x VIRTUALENV_DISTRIBUTE=1
 
-# For brew install of ruby
-export PATH="/usr/local/Cellar/ruby/1.9.3-p362:$PATH"
