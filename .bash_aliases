@@ -1,7 +1,7 @@
 # ls aliases
 alias l='ls'
 alias sl='ls'
-#alias ls='ls --color=auto'
+alias ls='ls -G'
 alias ll='ls -Al'
 alias la='ls -A'
 

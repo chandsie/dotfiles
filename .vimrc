@@ -21,6 +21,8 @@ set ruler
 noremap ; :
 noremap <C-h> :help
 imap jj <ESC>
+noremap j gj
+noremap k gk
 " Disable arrow keys
 map <up> <nop>
 map <down> <nop>
