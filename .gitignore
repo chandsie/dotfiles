@@ -4,3 +4,7 @@
 !.bash_aliases
 !.vim
 !.gitignore
+!.gitconfig
+!_gitconfig
+!.git-completion.bash
+

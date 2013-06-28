@@ -90,5 +90,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # For brew install of python
 export PATH="/usr/local/share/python:$PATH"
 
-declare -x VIRTUALENV_DISTRIBUTE=1
+export ANDROID_HOME="/Applications/Android Studio.app/sdk"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
 
+export VIRTUALENV_DISTRIBUTE=1
+
+. ~/.git-completion.bash
