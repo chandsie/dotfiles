@@ -1,6 +1,6 @@
 [user]
 	name = Shreyas Chand
-	email = shreyas@carezone.com
+	email = shreyas.chand@gmail.com
 [alias]
     co = checkout
     rb = rebase
@@ -34,6 +34,7 @@
 [merge]
 	tool = araxis
 [core]
+	excludesfile = ~/.gitignore_global
 	editor = vim
 	whitespace = warn
 [difftool "Kaleidoscope"]
