@@ -97,6 +97,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export VIRTUALENV_DISTRIBUTE=1
 
-# Android SDK Path
-export PATH="/Applications/Android Studio.app/sdk/platform-tools:$PATH"
+export ANDROID_HOME="/Applications/Android Studio.app/sdk"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
 
+export VIRTUALENV_DISTRIBUTE=1
+
+. ~/.git-completion.bash
