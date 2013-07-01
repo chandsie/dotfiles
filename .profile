@@ -23,7 +23,10 @@ parse_git_branch ()
     local GITDIR=`git rev-parse --show-toplevel 2>&1`
     if [[ "$GITDIR" != '/Users/shreyas' ]]
     then
-        echo -e "[$(git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')]"
+        local BRANCH=`git branch 2>/dev/null | sed -n '/^\*/s/^\* //p'`
+        if [ -n "$BRANCH" ]; then
+            echo -e "[$BRANCH]"
+        fi
     else
         echo ""
     fi
@@ -53,7 +56,7 @@ function git_color ()
     fi
 }
 
-PS1='\[$(git_color)\]$(parse_git_branch)\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
+export PS1='\[$(git_color)\]$(parse_git_branch)\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -75,10 +78,15 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-#. /usr/local/bin/django_bash_completion
+. /usr/local/bin/django_bash_completion
+
 #echo
 #fortune -s | cowsay
 #echo 
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
 
 if [ -f ~/.bash_profile ]; then
     . ~/.bash_profile
@@ -87,8 +95,8 @@ fi
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# For brew install of python
-export PATH="/usr/local/share/python:$PATH"
+export VIRTUALENV_DISTRIBUTE=1
 
-declare -x VIRTUALENV_DISTRIBUTE=1
+# Android SDK Path
+export PATH="/Applications/Android Studio.app/sdk/platform-tools:$PATH"
 
