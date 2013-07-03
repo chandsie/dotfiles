@@ -95,11 +95,12 @@ fi
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+## Brew binaries
+export PATH="/usr/local/bin:$PATH"
+
 export VIRTUALENV_DISTRIBUTE=1
 
 export ANDROID_HOME="/Applications/Android Studio.app/sdk"
 export PATH="$ANDROID_HOME/platform-tools:$PATH"
-
-export VIRTUALENV_DISTRIBUTE=1
 
 . ~/.git-completion.bash
