@@ -55,3 +55,6 @@ Session.vim
 *.project
 *.pydevproject
 
+# Virtualenv #
+##############
+venv/

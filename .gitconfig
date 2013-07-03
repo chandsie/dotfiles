@@ -1,44 +1,45 @@
 [user]
-	name = Shreyas Chand
-	email = shreyas.chand@gmail.com
+    name = Shreyas Chand
+    email = shreyas.chand@gmail.com
 [alias]
     co = checkout
     rb = rebase
     com = !git add . && git commit -am
-	ci = commit
-	co = checkout
-	cp = cherry-pick
-	d = diff
-	dc = diff --cached
-	l = log
-	lg = log --graph --pretty=format:'%C(yellow)%h%Creset%Cblue%d%Creset %s %C(green)(%cr)%Creset' --abbrev-commit --date=relative
-	lo = log --oneline
-	lp = log -p
-	mom = merge origin/master
-	poh = push origin head -u
-	pohf = push origin head -f
-	ri = rebase -i
-	s = status -sb
+    ci = commit
+    co = checkout
+    cp = cherry-pick
+    d = diff
+    dc = diff --cached
+    l = log
+    lg = log --graph --pretty=format:'%C(yellow)%h%Creset%Cblue%d%Creset %s %C(green)(%cr)%Creset' --abbrev-commit --date=relative
+    lo = log --oneline
+    lp = log -p
+    mom = merge origin/master
+    poh = push origin head -u
+    pohf = push origin head -f
+    ri = rebase -i
+    s = status -sb
     st = status
+    hDeploy = push heroku master
 [branch]
-	autosetupmerge = true
-	autosetuprebase = always
+    autosetupmerge = true
+    autosetuprebase = always
 [color]
-	branch = auto
-	diff = auto
-	interactive = auto
-	status = auto
-	ui = auto
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+    ui = auto
 [diff]
-	tool = araxis
+    tool = araxis
 [merge]
-	tool = araxis
+    tool = araxis
 [core]
-	excludesfile = ~/.gitignore_global
-	editor = vim
-	whitespace = warn
+    excludesfile = ~/.gitignore_global
+    editor = vim
+    whitespace = warn
 [difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+    trustExitCode = true
