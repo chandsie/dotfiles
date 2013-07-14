@@ -79,6 +79,7 @@ let mapleader = ","
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
 nnoremap <leader>T :retab<cr>
 nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader>t :CommandTFlush<cr> :CommandT<cr>
 
 " Splits
 set splitright
