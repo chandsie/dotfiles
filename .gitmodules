@@ -10,3 +10,6 @@
 [submodule ".vim/bundle/vim-numbertoggle"]
 	path = .vim/bundle/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
