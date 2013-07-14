@@ -78,7 +78,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-. /usr/local/bin/django_bash_completion
+if [ -f /usr/local/bin/django_bash_completion ]; then
+    . /usr/local/bin/django_bash_completion
+fi
 
 #echo
 #fortune -s | cowsay
@@ -100,7 +102,9 @@ export PATH="/usr/local/bin:$PATH"
 
 export VIRTUALENV_DISTRIBUTE=1
 
-export ANDROID_HOME="/Applications/Android Studio.app/sdk"
+export ANDROID_HOME="/usr/local/opt/android-sdk"
 export PATH="$ANDROID_HOME/platform-tools:$PATH"
 
-. ~/.git-completion.bash
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi

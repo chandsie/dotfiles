@@ -60,8 +60,12 @@ set expandtab
 syntax on
 filetype plugin indent on
 set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+if has('gui_running')
+    let g:solarized_termcolors=256
+    colorscheme solarized
+else
+    set background=dark
+endif
 
 " Wrapping (not that kind...)
 set nowrap
