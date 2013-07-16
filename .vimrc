@@ -83,7 +83,7 @@ let mapleader = ","
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
 nnoremap <leader>T :retab<cr>
 nnoremap <leader>w <C-w>v<C-w>l
-nnoremap <leader>f :CommandTFlush<cr> :CommandT<cr>
+nnoremap <leader>t :CtrlP<cr>
 
 " Splits
 set splitright
@@ -92,11 +92,14 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Ctrl-P
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 " Plugin List
 "0. pathogen
 "1. vim-numbertoggle
 "2. nerdcommenter
 "3. surround.vim
 "4. MatchTag (non-pathogen)
-"5. Command-T
+"5. CtrlP
 
