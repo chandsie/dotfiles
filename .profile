@@ -56,7 +56,7 @@ function git_color ()
     fi
 }
 
-export PS1='\[$(git_color)\]$(parse_git_branch)\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
+export PS1='\[$(git_color)\]$(parse_git_branch)\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
