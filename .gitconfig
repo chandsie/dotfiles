@@ -21,6 +21,9 @@
     s = status -sb
     st = status
     hDeploy = push heroku master
+    ign = !git update-index --assume-unchanged
+    unign = !git update-index --no-assume-unchanged
+    ignd = !git ls-files -v | grep ^[a-z]
 [branch]
     autosetupmerge = true
     autosetuprebase = always
