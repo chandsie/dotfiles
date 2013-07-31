@@ -34,18 +34,22 @@
     status = auto
     ui = auto
 [diff]
-    tool = araxis
+	tool = Kaleidoscope
 [merge]
-    tool = araxis
+	tool = Kaleidoscope
     mergeoptions = --no-ff
 [core]
     excludesfile = ~/.gitignore_global
     editor = vim
     whitespace = warn
 [difftool "Kaleidoscope"]
-    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
-    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-    trustExitCode = true
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
 [push]
 	default = simple
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
