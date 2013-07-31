@@ -105,6 +105,9 @@ export VIRTUALENV_DISTRIBUTE=1
 export ANDROID_HOME="/usr/local/opt/android-sdk"
 export PATH="$ANDROID_HOME/tools:$PATH"
 
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
