@@ -102,6 +102,7 @@ export PATH="/usr/local/bin:$PATH"
 
 export VIRTUALENV_DISTRIBUTE=1
 
+## Brewed Android SDK
 export ANDROID_HOME="/usr/local/opt/android-sdk"
 export PATH="$ANDROID_HOME/tools:$PATH"
 
