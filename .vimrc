@@ -32,8 +32,6 @@ imap <up> <nop>
 imap <down> <nop>
 imap <right> <nop>
 imap <left> <nop>
-" Disable mouse
-"set mouse=
 
 " Searching
 nnoremap / /\v
@@ -92,7 +90,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Ctrl-P
+" Non-pathogen plugin installs
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Plugin List
