@@ -58,10 +58,6 @@ function git_color ()
 
 export PS1='\[$(git_color)\]$(parse_git_branch)\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
 
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -90,8 +86,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
-if [ -f ~/.bash_profile ]; then
-    . ~/.bash_profile
+if [ -f ~/.profile ]; then
+    . ~/.profile
 fi
 
 ### Added by the Heroku Toolbelt
