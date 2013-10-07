@@ -20,7 +20,7 @@
     ri = rebase -i
     s = status -sb
     st = status
-    hDeploy = push heroku master
+    hdeploy = push heroku master
     ign = !git update-index --assume-unchanged
     unign = !git update-index --no-assume-unchanged
     ignd = !git ls-files -v | grep ^[a-z]
@@ -34,21 +34,18 @@
     status = auto
     ui = auto
 [diff]
-	tool = Kaleidoscope
+	tool = vimdiff
 [merge]
-	tool = Kaleidoscope
+	tool = vimdiff
     mergeoptions = --no-ff
+[rebase]
+	autosquash = true
 [core]
     excludesfile = ~/.gitignore_global
     editor = vim
     whitespace = warn
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
 [push]
-	default = simple
+	default = current
 [difftool]
 	prompt = false
 [mergetool]
