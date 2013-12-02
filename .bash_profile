@@ -108,3 +108,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
+
+# Add Latex binaries to path
+export PATH="/usr/texbin:$PATH"
