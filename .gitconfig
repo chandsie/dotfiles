@@ -44,6 +44,7 @@
     excludesfile = ~/.gitignore_global
     editor = vim
     whitespace = warn
+    autocrlf = true
 [push]
 	default = current
 [difftool]
