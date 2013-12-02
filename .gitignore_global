@@ -58,3 +58,8 @@ Session.vim
 # Virtualenv #
 ##############
 venv/
+
+# IntelliJ IDEA project files #
+###############################
+workspace.xml
+tasks.xml
