@@ -74,14 +74,16 @@ filetype plugin on
 set ofu=syntaxcomplete#Complete
 
 " Auto Commands
-au FocusLost * : wa
+:au FocusLost * silent! wa
 
 " Custom Leader Commands
 let mapleader = ","
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
 nnoremap <leader>T :retab<cr>
 nnoremap <leader>w <C-w>v<C-w>l
-nnoremap <leader>t :CtrlP<cr>
+nnoremap <leader>f :CtrlP<cr>
+nnoremap <leader>t :ConqueTerm bash<cr>
+nnoremap <leader>d :NERDTree<cr>
 
 " Splits
 set splitright
