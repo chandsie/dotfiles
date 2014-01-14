@@ -59,6 +59,9 @@ function git_color ()
 # Command prompt definition: [git_branch_name]username:cwd $
 export PS1='\[$(git_color)\]$(parse_git_branch)\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
 
+# Vi style prompt input
+set -o vi
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
