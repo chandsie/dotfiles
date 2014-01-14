@@ -78,10 +78,6 @@ if [ -f /usr/local/bin/django_bash_completion ]; then
     . /usr/local/bin/django_bash_completion
 fi
 
-#echo
-#fortune -s | cowsay
-#echo 
-
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
