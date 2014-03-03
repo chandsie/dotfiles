@@ -63,3 +63,14 @@ venv/
 ###############################
 workspace.xml
 tasks.xml
+
+# Latex #
+#########
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.pdf
