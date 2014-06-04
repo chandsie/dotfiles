@@ -3,6 +3,7 @@
     email = shreyas.chand@gmail.com
 [alias]
     rb = rebase
+    rbm = rebase master
     com = !git add . && git commit -am
     cm = commit
     co = checkout
