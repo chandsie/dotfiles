@@ -102,4 +102,5 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 "3. surround.vim
 "4. MatchTag (non-pathogen)
 "5. CtrlP
+"6. ag.vim
 
