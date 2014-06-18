@@ -17,6 +17,7 @@
     lg = log --graph --pretty=format:'%C(yellow)%h%Creset%Cblue%d%Creset %s %C(green)(%cr)%Creset' --abbrev-commit --date=relative
     lo = log --oneline
     lp = log -p
+    mast = checkout master
     mom = merge origin/master
     poh = push origin head -u
     pohf = push origin head -f
