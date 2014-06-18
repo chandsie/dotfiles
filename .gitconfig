@@ -2,15 +2,17 @@
     name = Shreyas Chand
     email = shreyas.chand@gmail.com
 [alias]
-    rb = rebase
-    rbm = rebase master
-    com = !git add . && git commit -am
+    a = add -A
     cm = commit
     co = checkout
     cob = checkout -b
+    com = !git add . && git commit -am
     cp = cherry-pick
     d = diff
     dc = diff --cached
+    hdeploy = push heroku master
+    ign = !git update-index --assume-unchanged
+    ignd = !git ls-files -v | grep ^[a-z]
     l = log
     lg = log --graph --pretty=format:'%C(yellow)%h%Creset%Cblue%d%Creset %s %C(green)(%cr)%Creset' --abbrev-commit --date=relative
     lo = log --oneline
@@ -18,13 +20,12 @@
     mom = merge origin/master
     poh = push origin head -u
     pohf = push origin head -f
+    rb = rebase
+    rbm = rebase master
     ri = rebase -i
     s = status -sb
     st = status
-    hdeploy = push heroku master
-    ign = !git update-index --assume-unchanged
     unign = !git update-index --no-assume-unchanged
-    ignd = !git ls-files -v | grep ^[a-z]
 [branch]
     autosetupmerge = true
     autosetuprebase = always
