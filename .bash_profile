@@ -100,6 +100,7 @@ export VIRTUALENV_DISTRIBUTE=1
 ## Brewed Android SDK
 export ANDROID_HOME="/usr/local/opt/android-sdk"
 export PATH="$ANDROID_HOME/tools:$PATH"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
