@@ -32,6 +32,9 @@ imap <up> <nop>
 imap <down> <nop>
 imap <right> <nop>
 imap <left> <nop>
+" Enable mouse support
+set mouse=a
+set ttymouse=xterm2
 
 " Searching
 nnoremap / /\v
