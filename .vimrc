@@ -79,17 +79,22 @@ set ofu=syntaxcomplete#Complete
 " Auto Commands
 :au FocusLost * silent! wa
 
-" Custom Leader Commands
+" Leader Commands
 let mapleader = ","
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
-nnoremap <leader>T :retab<cr>
-nnoremap <leader>w <C-w>v<C-w>l
-nnoremap <leader>f :CtrlP<cr>
-nnoremap <leader>t :ConqueTerm bash<cr>
-nnoremap <leader>d :NERDTree<cr>
+    " Trim trailing whitespace
+    nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
+    " Retab all the things
+    nnoremap <leader>T :retab<cr>
+    " Open a vertical split
+    nnoremap <leader>v <C-w>v
+    " Open a horizontal split
+    nnoremap <leader>s <C-w>s
+    " Open plugins
+    nnoremap <leader>f :CtrlP<cr>
+    nnoremap <leader>t :ConqueTerm bash<cr>
+    nnoremap <leader>d :NERDTree<cr>
 
-" Splits
-set splitright
+" Split navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
