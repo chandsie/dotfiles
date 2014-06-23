@@ -90,8 +90,6 @@ let mapleader = ","
     " Open a horizontal split
     nnoremap <leader>s <C-w>s
     " Open plugins
-    nnoremap <leader>f :CtrlP<cr>
-    nnoremap <leader>t :ConqueTerm bash<cr>
     nnoremap <leader>d :NERDTree<cr>
 
 " Split navigation
