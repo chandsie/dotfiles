@@ -100,9 +100,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Non-pathogen plugin installs
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
 " Plugin List
 "0. pathogen
 "1. vim-numbertoggle
