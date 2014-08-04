@@ -17,6 +17,7 @@ set backspace=indent,eol,start
 set undofile
 set relativenumber
 set ruler
+set cursorline
 
 " Key Mappings
 noremap ; :
@@ -59,15 +60,10 @@ set softtabstop=4
 set expandtab
 
 " Color/Highlights
-syntax on
+syntax enable
 filetype plugin indent on
 set background=dark
-if has('gui_running')
-    let g:solarized_termcolors=256
-    colorscheme solarized
-else
-    set background=dark
-endif
+colorscheme solarized
 
 " Wrapping (not that kind...)
 set nowrap
