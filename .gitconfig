@@ -14,7 +14,6 @@
     ign = !git update-index --assume-unchanged
     ignd = !git ls-files -v | grep ^[a-z]
     l = log
-    lf = log --graph --pretty=format:'%C(yellow)%h%Creset%Cblue%d%Creset %s %C(green)(%cr)%Creset' --abbrev-commit --date=relative --num-stat
     lg = log --graph --pretty=format:'%C(yellow)%h%Creset%Cblue%d%Creset %s %C(green)(%cr)%Creset' --abbrev-commit --date=relative
     lo = log --oneline
     lp = log -p
