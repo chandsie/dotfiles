@@ -1,1 +1,2 @@
-set -x PATH /usr/local/Cellar/ruby/2.1.2_2/bin /usr/local/bin /usr/local/sbin /usr/bin /bin /usr/sbin /sbin $PATH
+set -x ANDROID_HOME /users/chandsie/Library/Android/sdk
+set -x PATH {$ANDROID_HOME}/tools {$ANDROID_HOME}/platform-tools /usr/local/bin /usr/local/sbin /usr/bin /bin /usr/sbin /sbin $PATH
