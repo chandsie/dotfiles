@@ -97,6 +97,15 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Syntastic Configs
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+
 " Plugin List
 "0. pathogen
 "1. vim-numbertoggle
@@ -104,4 +113,4 @@ nnoremap <C-l> <C-w>l
 "3. surround.vim
 "6. ag.vim
 "7. Command-T
-
+"8. Syntastic
