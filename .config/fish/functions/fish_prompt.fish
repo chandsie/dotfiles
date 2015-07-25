@@ -1,5 +1,4 @@
 function fish_prompt --description 'Write out the prompt'
-
 	set -l last_status $status
 
 	# Just calculate these once, to save a few cycles when displaying the prompt
@@ -79,6 +78,10 @@ function fish_prompt --description 'Write out the prompt'
         if [ $git_root_dir != $HOME ]
             __fish_git_prompt
         end
+    end
+
+    if set -q VIRTUAL_ENV
+        echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
     end
 
 	echo -n -s "$__fish_prompt_user" "$USER" "$__fish_prompt_normal" @ "$__fish_prompt_host" "$__fish_prompt_hostname" "$__fish_prompt_normal" ' ' "$__fish_prompt_cwd" (prompt_pwd) (git_prompt) "$__fish_prompt_normal" "$prompt_status" "$delim" ' '
