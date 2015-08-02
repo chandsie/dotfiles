@@ -114,3 +114,4 @@ let g:syntastic_check_on_open = 1
 "6. ag.vim
 "7. Command-T
 "8. Syntastic
+"9. YouCompleteMe
