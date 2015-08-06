@@ -61,8 +61,8 @@ venv/
 
 # IntelliJ IDEA project files #
 ###############################
-workspace.xml
-tasks.xml
+*.iml
+.idea/
 
 # Latex #
 #########
