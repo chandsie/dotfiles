@@ -53,7 +53,6 @@ nnoremap <CR> :let @/ = ""<CR><CR>
 
 " Tab
 set autoindent
-set smartindent
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
