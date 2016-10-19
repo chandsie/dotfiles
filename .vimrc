@@ -88,20 +88,9 @@ let mapleader = ","
     " Open plugins
     nnoremap <leader>d :NERDTree<cr>
     nnoremap <leader>f :CommandT<cr>
-    nnoremap <leader>t <Plug>TaskList
 
 " Split navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-" Plugin List
-"0. pathogen
-"1. vim-numbertoggle
-"2. nerdcommenter
-"3. surround.vim
-"6. ag.vim
-"7. Command-T
-"8. Syntastic
-"9. YouCompleteMe
