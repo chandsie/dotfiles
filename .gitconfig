@@ -44,6 +44,7 @@
 [rebase]
 	autosquash = true
 [core]
+	precomposeunicode = true
     excludesfile = ~/.gitignore_global
     editor = vim
     whitespace = warn
@@ -53,3 +54,5 @@
 	prompt = false
 [mergetool]
 	prompt = false
+[rerere]
+	enabled = 1
